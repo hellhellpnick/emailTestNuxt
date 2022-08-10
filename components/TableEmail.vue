@@ -131,7 +131,12 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
@@ -140,11 +145,8 @@
                                       flex-direction: row;
                                       align-items: center;
                                       text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
                                       margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
+                                      margin-right: 5px;
                                     "
                                             >
                                               <h2 style="
@@ -157,11 +159,12 @@
                                         text-align: left;
                                         padding: 0;
                                         margin: 0;
-                                        margin-right: 5px;
                                         width: 75px;
                                       ">
                                                 Id:
                                               </h2>
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -177,21 +180,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -208,6 +205,9 @@
                                       ">
                                                 Date:
                                               </h2>
+
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -223,22 +223,13 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
-                                            <td
-                                              align="left"
-                                              valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
-                                            >
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -254,6 +245,8 @@
                                       ">
                                                 Name:
                                               </h2>
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -269,21 +262,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -300,6 +287,9 @@
                                       ">
                                                 Phone:
                                               </h2>
+
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -316,21 +306,15 @@
                                             </td>
                                           </tr>
 
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -347,6 +331,9 @@
                                       ">
                                                 Email:
                                               </h2>
+
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -362,21 +349,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -393,6 +374,9 @@
                                       ">
                                                 Country:
                                               </h2>
+
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -408,21 +392,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -439,6 +417,9 @@
                                       ">
                                                 Comment:
                                               </h2>
+
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -454,21 +435,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -485,6 +460,9 @@
                                       ">
                                                 City:
                                               </h2>
+
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -500,21 +478,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -531,6 +503,8 @@
                                       ">
                                                 PostCode:
                                               </h2>
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -546,21 +520,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -577,6 +545,9 @@
                                       ">
                                                 Street:
                                               </h2>
+
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -592,21 +563,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -623,6 +588,8 @@
                                       ">
                                                 House:
                                               </h2>
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -638,21 +605,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -669,6 +630,8 @@
                                       ">
                                                 Apartment:
                                               </h2>
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -684,21 +647,15 @@
                                               </h2>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="
+                                              padding-bottom: 10px;
+                                              display: flex;
+                                              padding-left: 10px;
+                                              margin-bottom: 10px;
+                                              border-bottom: 1px solid rgb(237,237,237);">
                                             <td
                                               align="left"
                                               valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
                                             >
                                               <h2 style="
                                         color: #000;
@@ -715,6 +672,8 @@
                                       ">
                                                 Payment:
                                               </h2>
+                                            </td>
+                                            <td>
                                               <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -755,12 +714,8 @@
                                               align="left"
                                               valign="top"
                                               style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      padding: 0;
-                                      align-items: center;
-                                      width: 100%;
-                                    "
+                                              width: 70%;
+                                            "
                                             >
                                               <h3 style="
                                         color: #000;
@@ -772,11 +727,14 @@
                                         text-align: left;
                                         background-color: #ededed;
                                         padding: 15px;
-                                        width: 70%;
+                                        width: 100%;
                                         margin: 0;
                                       ">
                                                 Product
                                               </h3>
+
+                                            </td>
+                                            <td style="max-width: 15%; width: 100%">
                                               <h3 style="
                                         color: #000;
                                         line-height: 100%;
@@ -787,11 +745,14 @@
                                         text-align: left;
                                         background-color: #ededed;
                                         padding: 15px;
-                                        max-width: 70%;
+                                        max-width: 100%;
+                                        width: 100%;
                                         margin: 0;
                                       ">
                                                 Count
                                               </h3>
+                                            </td>
+                                            <td style="max-width: 15%; width: 100%">
 
                                               <h3 style="
                                         color: #000;
@@ -803,7 +764,8 @@
                                         text-align: left;
                                         background-color: #ededed;
                                         padding: 15px;
-                                        max-width: 70%;
+                                        max-width: 100%;
+                                        width: 100%;
                                         margin: 0;
                                       ">
                                                 Price
@@ -814,6 +776,8 @@
                                           <tr
                                             v-for="(item, index) in order.listItems"
                                             :key="index"
+                                            style="display: flex; 
+                                      border-bottom: 1px solid #ededed;"
                                           >
                                             <td
                                               align="left"
@@ -825,14 +789,12 @@
                                       padding: 0;
                                       align-items: center;
                                       width: 100%;
-                                      border-bottom: 1px solid #ededed;
                                     "
                                             >
                                               <div style="
                                         flex-direction: column;
                                         text-align: left;
                                         padding: 15px;
-                                        width: 70%;
                                         margin: 0;
                                       ">
                                                 <a
@@ -860,6 +822,11 @@
                                                   Colors: {{ item.color }}
                                                 </p>
                                               </div>
+                                            </td>
+                                            <td style="
+                                        width: 67px;
+                                        margin: 0;
+                                      ">
                                               <div style="
                                         width: 67px;
                                         margin: 0;
@@ -876,6 +843,11 @@
                                                   {{ item.count }}</h3>
                                               </div>
 
+                                            </td>
+                                            <td style="
+                                        width: 67px;
+                                        margin: 0;
+                                      ">
                                               <div style="
                                         width: 67px;
                                         margin: 0;
@@ -893,7 +865,8 @@
                                               </div>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="display: flex; 
+                                      border-bottom: 1px solid #ededed;">
                                             <td
                                               align="left"
                                               valign="top"
@@ -903,15 +876,14 @@
                                       padding: 0;
                                       align-items: center;
                                       width: 100%;
-                                      border-bottom: 1px solid #ededed;
                                     "
                                             >
                                               <div style="
                                         text-align: left;
                                         padding: 15px;
-                                        width: 70%;
                                         margin: 0;
                                         border-right: 1px solid #ededed;
+                                        width: 100%;
                                       ">
                                                 <p style="
                                           color: #000;
@@ -926,6 +898,9 @@
                                                   Count:
                                                 </p>
                                               </div>
+
+                                            </td>
+                                            <td>
 
                                               <h3 style="
                                         color: #000;
@@ -943,7 +918,8 @@
                                               </h3>
                                             </td>
                                           </tr>
-                                          <tr>
+                                          <tr style="display: flex; 
+                                      border-bottom: 1px solid #ededed;">
                                             <td
                                               align="left"
                                               valign="top"
@@ -953,13 +929,12 @@
                                       padding: 0;
                                       align-items: center;
                                       width: 100%;
-                                      border-bottom: 1px solid #ededed;
                                     "
                                             >
                                               <div style="
                                         text-align: left;
                                         padding: 15px;
-                                        width: 70%;
+                                        width:100%;
                                         margin: 0;
                                         border-right: 1px solid #ededed;
                                       ">
@@ -977,6 +952,8 @@
                                                 </p>
                                               </div>
 
+                                            </td>
+                                            <td>
                                               <h3 style="
                                         color: #000;
                                         line-height: 100%;
