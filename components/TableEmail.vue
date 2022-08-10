@@ -688,7 +688,7 @@
                                         margin-right: 5px;
                                         width: 75px;
                                       ">
-                                      Flat:
+                                      Apartment:
                                     </h2>
                                     <h2 style="
                                         color: #000;
@@ -701,7 +701,7 @@
                                         padding: 0;
                                         margin: 0;
                                       ">
-                                      {{ order.orderFlat }}
+                                      {{ order.orderApartment }}
                                     </h2>
                                   </td>
                                 </tr>
@@ -1053,7 +1053,7 @@ export default {
       orderPostCode: String,
       orderStreet: String,
       orderHouse: String,
-      orderFlat: String,
+      orderApartment: String,
       orderPayment: String,
       listItems: Array,
     },

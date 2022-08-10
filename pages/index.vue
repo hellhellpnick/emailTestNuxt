@@ -47,7 +47,7 @@ export default {
         orderPostCode: "42300",
         orderStreet: "Street",
         orderHouse: "49",
-        orderFlat: "53",
+        orderApartment: "53",
         orderPayment: "Pay",
         listItems: [
           {
