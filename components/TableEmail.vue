@@ -25,7 +25,9 @@
       >
         <tbody
           background-color="#ededed"
-          style="background-color: #ededed"
+          style="background-color: #ffffff; 
+                                          width: 100%;
+                                          max-width: 100%;"
         >
           <tr>
             <td
@@ -43,7 +45,9 @@
 
                 <tbody
                   background-color="#fff"
-                  style="background-color: #fff"
+                  style="background-color: #ffffff; 
+                                          width: 100%;
+                                          max-width: 100%;"
                 >
                   <tr style="display: flex; flex-direction: column">
                     <!-- //order name, email, phone .... -->
@@ -62,7 +66,9 @@
 
                         <tbody
                           background-color="#ffffff"
-                          style="background-color: #ffffff"
+                          style="background-color: #ffffff; 
+                                          width: 100%;
+                                          max-width: 100%;"
                         >
                           <tr>
                             <td
@@ -78,7 +84,9 @@
 
                                 <tbody
                                   background-color="#ffffff"
-                                  style="background-color: #ffffff"
+                                  style="background-color: #ffffff; 
+                                          width: 100%;
+                                          max-width: 100%;"
                                 >
                                   <tr>
                                     <td
@@ -94,7 +102,9 @@
 
                                         <tbody
                                           background-color="#ffffff"
-                                          style="background-color: #ffffff"
+                                          style="background-color: #ffffff; 
+                                          width: 100%;
+                                          max-width: 100%;"
                                         >
                                           <tr>
                                             <td>
@@ -709,15 +719,10 @@
                                             </td>
                                           </tr>
 
-                                          <tr style="display: flex; flex-direction: column">
-                                            <td
-                                              align="left"
-                                              valign="top"
-                                              style="
+                                          <tr style="display: flex;">
+                                            <td style="
                                               width: 70%;
-                                            "
-                                            >
-                                              <h3 style="
+                                              
                                         color: #000;
                                         line-height: 100%;
                                         font-family: Helvetica, Arial,
@@ -728,14 +733,12 @@
                                         background-color: #ededed;
                                         padding: 15px;
                                         width: 100%;
-                                        margin: 0;
-                                      ">
-                                                Product
-                                              </h3>
+                                        margin: 0;">
+                                              Product
 
                                             </td>
-                                            <td style="max-width: 15%; width: 100%">
-                                              <h3 style="
+                                            <td style="
+                                            
                                         color: #000;
                                         line-height: 100%;
                                         font-family: Helvetica, Arial,
@@ -746,15 +749,11 @@
                                         background-color: #ededed;
                                         padding: 15px;
                                         max-width: 100%;
-                                        width: 100%;
-                                        margin: 0;
-                                      ">
-                                                Count
-                                              </h3>
+                                        width: 15%;
+                                        margin: 0;">
+                                              Count
                                             </td>
-                                            <td style="max-width: 15%; width: 100%">
-
-                                              <h3 style="
+                                            <td style="
                                         color: #000;
                                         line-height: 100%;
                                         font-family: Helvetica, Arial,
@@ -765,11 +764,9 @@
                                         background-color: #ededed;
                                         padding: 15px;
                                         max-width: 100%;
-                                        width: 100%;
-                                        margin: 0;
-                                      ">
-                                                Price
-                                              </h3>
+                                        width: 15%;
+                                        margin: 0;">
+                                              Price
                                             </td>
                                           </tr>
 
@@ -788,13 +785,14 @@
     align-items: center;
                                       padding: 0;
                                       align-items: center;
-                                      width: 100%;
+                                      max-width: 100%;
+                                      width: 63%;
+                                        padding: 15px;
                                     "
                                             >
                                               <div style="
                                         flex-direction: column;
                                         text-align: left;
-                                        padding: 15px;
                                         margin: 0;
                                       ">
                                                 <a
@@ -824,7 +822,8 @@
                                               </div>
                                             </td>
                                             <td style="
-                                        width: 67px;
+                                            max-width: 100%;
+                                            width: 15%;
                                         margin: 0;
                                       ">
                                               <div style="
@@ -845,7 +844,8 @@
 
                                             </td>
                                             <td style="
-                                        width: 67px;
+                                            max-width: 100%;
+                                            width: 15%;
                                         margin: 0;
                                       ">
                                               <div style="
@@ -866,26 +866,11 @@
                                             </td>
                                           </tr>
                                           <tr style="display: flex; 
-                                      border-bottom: 1px solid #ededed;">
-                                            <td
-                                              align="left"
-                                              valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      padding: 0;
-                                      align-items: center;
+                                      border-bottom: 1px solid #ededed; 
                                       width: 100%;
-                                    "
-                                            >
-                                              <div style="
-                                        text-align: left;
-                                        padding: 15px;
-                                        margin: 0;
-                                        border-right: 1px solid #ededed;
-                                        width: 100%;
-                                      ">
-                                                <p style="
+                                      max-width: 100%;">
+                                            <td style="
+                                            max-width: 100%;
                                           color: #000;
                                           text-align: right;
                                           line-height: 100%;
@@ -893,16 +878,14 @@
                                             sans-serif;
                                           font-size: 14px;
                                           font-weight: 400;
+                                        padding: 15px;
+                                        border-right: 1px solid #ededed;
+                                        width: 75%;
                                           margin: 0;
-                                        ">
-                                                  Count:
-                                                </p>
-                                              </div>
-
+                                    ">
+                                              Count:
                                             </td>
-                                            <td>
-
-                                              <h3 style="
+                                            <td style="
                                         color: #000;
                                         line-height: 100%;
                                         font-family: Helvetica, Arial,
@@ -911,34 +894,22 @@
                                         font-weight: 400;
                                         text-align: center;
                                         padding: 15px;
-                                        width: 100px;
                                         margin: 0;
+                                        max-width: 100%;
+                                        width: 30%;
                                       ">
-                                                {{count}}
-                                              </h3>
+
+                                              {{count}}
                                             </td>
                                           </tr>
                                           <tr style="display: flex; 
-                                      border-bottom: 1px solid #ededed;">
-                                            <td
-                                              align="left"
-                                              valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      padding: 0;
-                                      align-items: center;
-                                      width: 100%;
-                                    "
-                                            >
-                                              <div style="
-                                        text-align: left;
+                                      width: 500px;
+                                      max-width: 100%">
+                                            <td style="
+                                      max-width: 100%;
                                         padding: 15px;
-                                        width:100%;
-                                        margin: 0;
+                                        width:75%;
                                         border-right: 1px solid #ededed;
-                                      ">
-                                                <p style="
                                           color: #000;
                                           text-align: right;
                                           line-height: 100%;
@@ -947,14 +918,10 @@
                                           font-size: 14px;
                                           font-weight: 400;
                                           margin: 0;
-                                        ">
-                                                  Price:
-                                                </p>
-                                              </div>
-
+                                    ">
+                                              Price:
                                             </td>
-                                            <td>
-                                              <h3 style="
+                                            <td style="
                                         color: #000;
                                         line-height: 100%;
                                         font-family: Helvetica, Arial,
@@ -963,11 +930,11 @@
                                         font-weight: 400;
                                         text-align: center;
                                         padding: 15px;
-                                        width: 100px;
+                                        max-width: 30%;
+                                        width: 30%;
                                         margin: 0;
                                       ">
-                                                {{price}}$
-                                              </h3>
+                                              {{price}}$
                                             </td>
                                           </tr>
                                         </tbody>
