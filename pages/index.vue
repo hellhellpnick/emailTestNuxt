@@ -37,7 +37,6 @@ export default {
       order: {
         orderId: "#1234",
         orderDate: new Date().toLocaleDateString(),
-        orderStatus: "In processing",
         orderName: "Alex",
         orderPhone: "+38 098 131 23 17",
         orderEmail: "hell@gmail.com",
@@ -51,10 +50,16 @@ export default {
         orderPayment: "Pay",
         listItems: [
           {
-            color: "white",
+            color: "white, red, blue",
             link: "http://shemax.coi.ua/catalog/dustcollector/manikyurnaya-vytyazhka-style-pro-shemax",
-            count: 1,
+            count: 3,
             price: 350,
+          },
+          {
+            color: "yellow, red",
+            link: "http://shemax.coi.ua/catalog/accessories/fartuk-Sport_SheMax",
+            count: 2,
+            price: 75,
           },
         ],
       },

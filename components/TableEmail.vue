@@ -252,52 +252,6 @@
                                         margin-right: 5px;
                                         width: 75px;
                                       ">
-                                                Status:
-                                              </h2>
-                                              <h2 style="
-                                        color: #000;
-                                        line-height: 100%;
-                                        font-family: Helvetica, Arial,
-                                          sans-serif;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        text-align: left;
-                                        padding: 0;
-                                        margin: 0;
-                                      ">
-                                                {{ order.orderStatus }}
-                                              </h2>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td
-                                              align="left"
-                                              valign="top"
-                                              style="
-                                      display: flex;
-                                      flex-direction: row;
-                                      align-items: center;
-                                      text-align: left;
-                                      padding-bottom: 10px;
-                                      padding-left: 10px;
-                                      margin: 0;
-                                      margin-bottom: 10px;
-                                      border-bottom: 1px solid #ededed;
-                                    "
-                                            >
-                                              <h2 style="
-                                        color: #000;
-                                        line-height: 100%;
-                                        font-family: Helvetica, Arial,
-                                          sans-serif;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        text-align: left;
-                                        padding: 0;
-                                        margin: 0;
-                                        margin-right: 5px;
-                                        width: 75px;
-                                      ">
                                                 Name:
                                               </h2>
                                               <h2 style="
@@ -903,7 +857,7 @@
                                           font-weight: 400;
                                           margin: 0;
                                         ">
-                                                  Color: {{ item.color }}
+                                                  Colors: {{ item.color }}
                                                 </p>
                                               </div>
                                               <div style="
@@ -1074,7 +1028,6 @@ export default {
     order: {
       orderId: String,
       orderDate: String,
-      orderStatus: String,
       orderName: String,
       orderPhone: String,
       orderEmail: String,
@@ -1092,7 +1045,7 @@ export default {
 
   mounted() {
     this.order.listItems.forEach((el) => {
-      this.price += el.price;
+      this.price += el.price * el.count;
       this.count += el.count;
     });
   },
