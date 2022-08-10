@@ -33,7 +33,7 @@
               cellpadding="0"
               cellspacing="0"
               maxWidth="500"
-              style="border: 5px solid #ededed"
+              style="border: 0px solid #ffffff"
             >
               <tr style="display: flex; flex-direction: column">
                 <!-- //order name, email, phone .... -->
@@ -71,6 +71,18 @@
                                 cellspacing="0"
                                 width="100%"
                               >
+                                <tr>
+                                  <td>
+                                    <img
+                                      src="https://api.coi.ua/media/shemax-logo.png"
+                                      alt="shemax"
+                                      width="500"
+                                      height="200"
+                                      title="Logo"
+                                      style="display:block"
+                                    />
+                                  </td>
+                                </tr>
                                 <tr style="
                                     display: flex;
                                     flex-direction: column;
@@ -80,17 +92,6 @@
                                     align="left"
                                     valign="top"
                                   >
-                                    <h1 style="
-                                        color: #000;
-                                        line-height: 100%;
-                                        font-family: Helvetica, Arial,
-                                          sans-serif;
-                                        font-size: 14px;
-                                        font-weight: normal;
-                                        text-align: left;
-                                      ">
-                                      desc
-                                    </h1>
                                     <h2 style="
                                         color: #000;
                                         line-height: 100%;
@@ -931,7 +932,7 @@
                                         padding: 15px;
                                         width: 70%;
                                         margin: 0;
-                                        border-right: 1px solid #ededed;
+                                        border-right: 1px solid #ffffff;
                                       ">
                                       <p style="
                                           color: #000;
@@ -981,7 +982,7 @@
                                         padding: 15px;
                                         width: 70%;
                                         margin: 0;
-                                        border-right: 1px solid #ededed;
+                                        border-right: 1px solid #ffffff;
                                       ">
                                       <p style="
                                           color: #000;
