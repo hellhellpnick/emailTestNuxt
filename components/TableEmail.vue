@@ -109,9 +109,9 @@
                                           <tr>
                                             <td>
                                               <img
-                                                src="https://api.coi.ua/media/shemax-logo.png"
+                                                src="https://api.coi.ua/media/shemax-logo-2.png"
                                                 alt="shemax"
-                                                width="500"
+                                                width="400"
                                                 height="200"
                                                 title="Logo"
                                                 style="display:block"
@@ -807,7 +807,7 @@
                                         "
                                                   :href="item.link"
                                                 >
-                                                  {{ item.link }}</a>
+                                                  {{ item.title }}</a>
                                                 <p style="
                                           color: #000;
                                           line-height: 100%;

@@ -52,12 +52,14 @@ export default {
           {
             color: "white, red, blue",
             link: "http://shemax.coi.ua/catalog/dustcollector/manikyurnaya-vytyazhka-style-pro-shemax",
+            title: "Професійна настільна витяжка — Style PRO",
             count: 3,
             price: 350,
           },
           {
             color: "yellow, red",
             link: "http://shemax.coi.ua/catalog/accessories/fartuk-Sport_SheMax",
+            title: "Фартух — Sport SheMax",
             count: 2,
             price: 75,
           },
