@@ -7,6 +7,7 @@
     topmargin="0"
     marginheight="0"
     offset="0"
+    style="border-color: transparent"
   >
     <center style="background-color: #ededed">
       <table
@@ -17,6 +18,7 @@
         width="100%"
         background-color="#FFFFFF"
         style="
+        border-color: transparent
           table-layout: fixed;
           max-width: 100% !important;
           width: 100% !important;
@@ -26,8 +28,9 @@
         <tbody
           background-color="#ededed"
           style="background-color: #ffffff; 
-                                          width: 100%;
-                                          max-width: 100%;"
+          border-color: transparent
+          width: 100%;
+          max-width: 100%;"
         >
           <tr>
             <td
@@ -40,14 +43,16 @@
                 cellpadding="0"
                 cellspacing="0"
                 maxWidth="500"
-                style="border: 0px solid #ffffff"
+                style="border-color: transparent"
               >
 
                 <tbody
                   background-color="#fff"
-                  style="background-color: #ffffff; 
-                                          width: 100%;
-                                          max-width: 100%;"
+                  style="
+                  border-color: transparent;
+                  background-color: #ffffff; 
+                  width: 100%;
+                  max-width: 100%;"
                 >
                   <tr style="display: flex; flex-direction: column">
                     <!-- //order name, email, phone .... -->
@@ -60,15 +65,14 @@
                         cellpadding="0"
                         cellspacing="0"
                         width="100%"
-                        style="color: #ffffff"
+                        style="color: #ffffff; border-color: transparent"
                         bgcolor="#fffffff"
                       >
-
                         <tbody
                           background-color="#ffffff"
                           style="background-color: #ffffff; 
-                                          width: 100%;
-                                          max-width: 100%;"
+                          width: 100%;
+                          max-width: 100%;"
                         >
                           <tr>
                             <td
@@ -80,13 +84,13 @@
                                 cellpadding="0"
                                 cellspacing="0"
                                 width="500"
+                                style="border-color: transparent"
                               >
-
                                 <tbody
                                   background-color="#ffffff"
                                   style="background-color: #ffffff; 
-                                          width: 100%;
-                                          max-width: 100%;"
+                                  width: 100%;
+                                  max-width: 100%;"
                                 >
                                   <tr>
                                     <td
@@ -98,13 +102,14 @@
                                         border="0"
                                         cellspacing="0"
                                         width="100%"
+                                        style="border-color: transparent"
                                       >
-
                                         <tbody
                                           background-color="#ffffff"
                                           style="background-color: #ffffff; 
                                           width: 100%;
-                                          max-width: 100%;"
+                                          max-width: 100%;
+                                          border-color: transparent"
                                         >
                                           <tr>
                                             <td>
@@ -122,6 +127,7 @@
                                     display: flex;
                                     flex-direction: column;
                                     padding: 0 10px;
+                                    border-color: transparent
                                   ">
                                             <td
                                               align="left"
