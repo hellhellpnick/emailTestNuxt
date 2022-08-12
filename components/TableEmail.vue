@@ -746,10 +746,11 @@
                                         font-weight: 400;
                                         text-align: left;
                                         background-color: #ededed;
-                                        padding: 15px;
+                                        padding: 15px 0;
                                         max-width: 100%;
-                                        width: 15%;
-                                        margin: 0;">
+                                        width: 114px;
+                                        text-align: right;
+                                        margin: auto 0 auto auto  ;">
                                               Count
                                             </td>
                                             <td style="
@@ -761,10 +762,12 @@
                                         font-weight: 400;
                                         text-align: left;
                                         background-color: #ededed;
-                                        padding: 15px;
+                                        padding: 15px 0;
                                         max-width: 100%;
-                                        width: 15%;
-                                        margin: 0;">
+                                        width: 99px;
+                                        text-align: right;
+                                        margin: auto 0 auto auto;
+                                        padding-right: 15px;">
                                               Price
                                             </td>
                                           </tr>
@@ -859,7 +862,8 @@
                                         font-size: 14px;
                                         font-weight: 400;
                                         text-align: right;
-                                        vertical-align: middle;">
+                                        vertical-align: middle;
+                                        padding-right: 15px;">
                                                   {{ item.price }}$</h3>
                                               </div>
                                             </td>
@@ -896,7 +900,8 @@
                                         margin: 0;
                                         max-width: 100%;
                                         padding: 15px 0;
-                                        width: 86px;
+                                        width: 71px;
+                                        padding-right: 15px;
                                       ">
 
                                               {{count}}
@@ -930,9 +935,10 @@
                                         font-weight: 400;
                                         text-align: right;
                                         max-width: 30%;
-                                        width: 86px;
+                                        width: 71px;
                                         margin: 0;
                                         padding: 15px 0;
+                                        padding-right: 15px;
                                       ">
                                               {{price}}$
                                             </td>
