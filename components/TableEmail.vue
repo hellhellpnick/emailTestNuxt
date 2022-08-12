@@ -109,10 +109,10 @@
                                           <tr>
                                             <td>
                                               <img
-                                                src="https://api.coi.ua/media/shemax-logo-2.png"
+                                                src="https://api.coi.ua/media/123456.png"
                                                 alt="shemax"
-                                                width="400"
-                                                height="200"
+                                                width="500"
+                                                height="150"
                                                 title="Logo"
                                                 style="display:block"
                                               />
@@ -786,7 +786,7 @@
                                       padding: 0;
                                       align-items: center;
                                       max-width: 100%;
-                                      width: 63%;
+                                      width: 374px;
                                         padding: 15px;
                                     "
                                             >
@@ -823,11 +823,10 @@
                                             </td>
                                             <td style="
                                             max-width: 100%;
-                                            width: 15%;
+                                            width: 84px;
                                         margin: 0;
                                       ">
                                               <div style="
-                                        width: 67px;
                                         margin: 0;
                                       ">
                                                 <h3 style="
@@ -845,11 +844,10 @@
                                             </td>
                                             <td style="
                                             max-width: 100%;
-                                            width: 15%;
+                                        width: 84px;
                                         margin: 0;
                                       ">
                                               <div style="
-                                        width: 67px;
                                         margin: 0;
                                       ">
                                                 <h3 style="
@@ -880,11 +878,12 @@
                                           font-weight: 400;
                                         padding: 15px;
                                         border-right: 1px solid #ededed;
-                                        width: 75%;
+                                        width: 374px;
                                           margin: 0;
                                     ">
                                               Count:
                                             </td>
+                                            <td style="width: 84px"></td>
                                             <td style="
                                         color: #000;
                                         line-height: 100%;
@@ -896,19 +895,18 @@
                                         padding: 15px;
                                         margin: 0;
                                         max-width: 100%;
-                                        width: 30%;
+                                        width: 56px;
                                       ">
 
                                               {{count}}
                                             </td>
                                           </tr>
                                           <tr style="display: flex; 
-                                      width: 500px;
                                       max-width: 100%">
                                             <td style="
                                       max-width: 100%;
                                         padding: 15px;
-                                        width:75%;
+                                        width:374px;
                                         border-right: 1px solid #ededed;
                                           color: #000;
                                           text-align: right;
@@ -921,6 +919,7 @@
                                     ">
                                               Price:
                                             </td>
+                                            <td style="width: 84px"></td>
                                             <td style="
                                         color: #000;
                                         line-height: 100%;
@@ -931,7 +930,7 @@
                                         text-align: center;
                                         padding: 15px;
                                         max-width: 30%;
-                                        width: 30%;
+                                        width: 56px;
                                         margin: 0;
                                       ">
                                               {{price}}$
