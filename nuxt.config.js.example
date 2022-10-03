@@ -22,16 +22,13 @@ export default {
   loading: { color: "#FF421D", height: "4px" },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    `~/assets/css/main`,
-  ],
+  css: [`~/assets/css/main`],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
-
+  plugins: [{ src: "~/plugins/vue-scroll.js" }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: ['~/components/', { path: '~/components/base/', prefix: 'base' }],
+  components: ["~/components/", { path: "~/components/base/", prefix: "base" }],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [],
@@ -48,15 +45,15 @@ export default {
     message: [
       {
         name: "order",
-        to: "hellhellpnick@gmail.com",
+        to: "o.korotash@coi.ua",
       },
     ],
     smtp: {
       host: "smtp.gmail.com",
       port: 587,
       auth: {
-        user: "",
-        pass: "",
+        user: "hellhellpnick@gmail.com",
+        pass: "glsydqdjnwinrfrf",
       },
     },
   },
@@ -66,11 +63,15 @@ export default {
   },
 
   proxy: {
-    '/api/': 'http://api.reddytec.coi.ua',
+    "/api/": "http://api.reddytec.coi.ua",
     //for test
     // '/api/': { target: 'http://api.reddytec.coi.ua', pathRewrite: { '^/api/': '' } } //for prod
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  target: "static",
+  router: {
+    base: "/test-nuxt.git/",
+  },
 };
