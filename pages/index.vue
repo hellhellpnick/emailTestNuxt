@@ -1,96 +1,99 @@
 <template>
-  <form
-    method="POST"
-    @submit="submitForm"
-  >
-    <h2>Test form send template email</h2>
-    <div
-      v-for="(item, index) in order.listItems"
-      :key="index"
-      style="display: flex; flex-direction: row;"
-    >
-      <p style="margin-right: 10px">{{item.color}}</p>
-      <p style="margin-right: 10px">{{item.link}}</p>
-      <p style="margin-right: 10px">{{item.count}}</p>
-      <p style="margin-right: 10px">{{item.price}}</p>
-    </div>
-    <button
-      type="button"
-      @click="addItem"
-    >Add item</button>
-    <button type="submit">Send data</button>
-    <div style="display: none">
-      <TableEmail
-        ref='table'
-        :order="order"
-      />
-    </div>
-  </form>
+  <div>
+    <baseSelect
+      @update:modelValue="$data[selectCounty.field] = $event"
+      :modelValue="$data[selectCounty.field]"
+      :index="-1"
+      :select="selectCounty"
+      :className="'personal-office__form-select'"
+    />
+    <baseSelect
+      @update:modelValue="$data[selectCity.field] = $event"
+      :modelValue="$data[selectCity.field]"
+      :index="2"
+      :select="selectCity"
+      :className="'personal-office__form-select'"
+    />
+  </div>
 </template>
 <script>
-import axios from "axios";
-import TableEmail from "./../components/TableEmail.vue";
+import BaseSelect from "~/components/BaseSelect.vue";
 export default {
   data() {
     return {
-      el: "ok",
-      order: {
-        orderId: "#1234",
-        orderDate: new Date().toLocaleDateString(),
-        orderName: "Alex",
-        orderPhone: "+38 098 131 23 17",
-        orderEmail: "hell@gmail.com",
-        orderComment: "I really want to buy this",
-        orderCountry: "Ukraine",
-        orderCity: "Kyiv",
-        orderPostCode: "42300",
-        orderStreet: "Street",
-        orderHouse: "49",
-        orderApartment: "53",
-        orderPayment: "Pay",
-        listItems: [
-          {
-            color: "white, red, blue",
-            link: "http://shemax.coi.ua/catalog/dustcollector/manikyurnaya-vytyazhka-style-pro-shemax",
-            title: "Професійна настільна витяжка — Style PRO",
-            count: 3,
-            price: 350,
-          },
-          {
-            color: "yellow, red",
-            link: "http://shemax.coi.ua/catalog/accessories/fartuk-Sport_SheMax",
-            title: "Фартух — Sport SheMax",
-            count: 2,
-            price: 75,
-          },
-        ],
+      apiPopulation: [],
+      fieldCountry: "",
+      fieldCity: "",
+      selectCounty: {
+        title: "country",
+        listOptions: [],
+        field: "fieldCountry",
+      },
+      selectCity: {
+        title: "city",
+        listOptions: [],
+        field: "fieldCity",
       },
     };
   },
-  methods: {
-    addItem() {
-      this.order.listItems.push({
-        color: "red",
-        link: "zxc",
-        count: 1,
-        price: 20,
+  async fetch() {
+    let response = await fetch(
+      "https://countriesnow.space/api/v0.1/countries/population/cities"
+    );
+    if (response.ok) {
+      let json = await response.json();
+      this.apiPopulation = json.data;
+      json.data.forEach((item) => {
+        const checkCounty = this.selectCounty.listOptions.find(
+          (el) => el == item.country
+        );
+        if (!checkCounty) {
+          this.selectCounty.listOptions = [
+            ...this.selectCounty.listOptions,
+            item.country,
+          ];
+        }
       });
-    },
-    async submitForm(e) {
-      e.preventDefault();
-      var myHTML = "<div><h1>Jimbo.</h1>\n<p>That's what she said</p></div>";
-      var strippedHtml = myHTML.replace(/<[^>]+>/g, "");
-      // Jimbo.
-      // That's what she said
-      try {
-        await axios.post("/mail/send", {
-          config: "order",
-          subject: "Order form - reddytec",
-          html: this.$refs.table.$el.outerHTML,
-        });
-      } catch (e) {}
+    } else {
+    }
+  },
+  watch: {
+    async fieldCountry(newValue) {
+      if (newValue.length) {
+        const options = {
+          method: "POST",
+          body: JSON.stringify({ country: newValue }),
+        };
+        let response = await fetch(
+          "https://countriesnow.space/api/v0.1/countries/cities",
+          options
+        );
+        if (response.ok) {
+          let json = await response.json();
+          json.data.forEach((item) => {
+            this.selectCounty.listOptions.push(item.country);
+          });
+        }
+      } else {
+        this.selectCity.listOptions = [];
+      }
     },
   },
-  components: { TableEmail },
+  components: { BaseSelect },
+
+  async mounted() {
+    const options = {
+      method: "GET",
+      headers: {
+        "X-CSCAPI-KEY":
+          "Z1Uwc0Z6WGhvZ05MT3VvRzdpQzNEZEhhR3RsZWpLWlRma0pzOU82aA==",
+      },
+    };
+
+    fetch("https://api.countrystatecity.in/v1/countries", options)
+      .then((response) => response.json())
+      .then((response) => console.log(response))
+      .catch((err) => console.error(err));
+  },
 };
 </script>
