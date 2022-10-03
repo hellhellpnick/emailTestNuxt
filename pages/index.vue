@@ -82,16 +82,13 @@ export default {
       var strippedHtml = myHTML.replace(/<[^>]+>/g, "");
       // Jimbo.
       // That's what she said
-      console.log(strippedHtml);
       try {
         await axios.post("/mail/send", {
           config: "order",
           subject: "Order form - reddytec",
           html: this.$refs.table.$el.outerHTML,
         });
-      } catch (e) {
-        console.log(e);
-      }
+      } catch (e) {}
     },
   },
   components: { TableEmail },

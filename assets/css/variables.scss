@@ -1,20 +1,23 @@
 // === VARIABLES ===
-
 // === sizes ===
 $base: 4px;
 $width-container: 1180px;
-$height-header: $base * 15;
+$height-header: $base * 20;
 $height-btn: 50px;
+$border-radius-main: 4px;
+$border-radius-primary: 10px;
 $border-radius-btn: 30px;
+$border-radius-soft: 8px;
+$border-radius-round: 20px;
 $border-radius-half: 50%;
-$border-radius: 30px;
-$border-radius-card: 10px;
+$border-radius-soft-button: 0 0 8px 8px;
+$border-radius-round-button: 0 0 20px 20px;
 $z-index-header: 100;
 $z-index-cookies: 999999999;
 // === / sizes ===
 
 // === text size ===
-$font-size-xxl: 40px;
+$font-size-xxl: 50px;
 $font-size-xl: 28px;
 $font-size-lg: 24px;
 $font-size-md: 18px;
@@ -23,7 +26,7 @@ $font-size-xs: 14px;
 // === / text size ===
 
 // === text line height ===
-$font-line-height-xxl: 50px;
+$font-line-height-xxl: 70px;
 $font-line-height-xl: 40px;
 $font-line-height-lg: 36px;
 $font-line-height-md: 28px;
@@ -31,73 +34,96 @@ $font-line-height-sm: 26px;
 $font-line-height-xs: 24px;
 // === / text line height ===
 
+
 // === text weight ===
-$font-weight-main: 500;
-$font-weight-primary: 550;
-$font-weight-secondary: 600;
+$font-weight-main: 400;
+$font-weight-primary: 600;
+$font-weight-secondary: 700;
 // === / text weight ===
 
 // === font family ===
-$font-family-main: "HOK Sans Pro", sans-serif;
+$font-family-main: 'Lora', serif;
+$font-family-primary: 'Open Sans', sans-serif;
 // === / font family ===
 
-// === colors ===
-$color-primary: #0098FF;
-$color-secondary: #FFFFFF;
-$color-tertiary: #FF421D;
-
-// === colors bg ===
-$color-bg-primary-light: #fff;
-$color-bg-primary-dark: #000;
-$color-bg-secondary-light: #0098FF;
-$color-bg-secondary-dark: #002EAF;
-$color-bg-tertiary-light: #DBA293;
-$color-bg-tertiary-dark: #00592E;
-$color-bg-accent-light: #EAFF50;
-$color-bg-accent-dark: #FF421D;
-
-// === colors text ===
-$color-text-primary-light: #fff;
-$color-text-primary-dark: #000;
-$color-text-secondary: #002EAF;
-$color-text-tertiary: #001E72;
-$color-text-link: #0098FF;
-
-// === colors btn ===
-$color-button-static-main: #0098FF;
-$color-button-static-primary: #FFFFFF;
-$color-button-hover: #002EAF;
-$color-button-pressed: #001E72;
-$color-button-disabled: #CBCBCB;
-
-// === colors icon bg ===
-$color-icon-bg-main: #fff;
-$color-icon-bg-primary: #FF421D;
-$color-icon-bg-secondary: #0098FF;
-
-// === colors icon ===
-$color-icon-main: #fff;
-$color-icon-primary: #FF421D;
-
-// === colors border ===
-$color-border-main: #F4F4F4;
-$color-border-primary: #000;
-$color-border-second: #FF421D;
-// === / colors ===
+// === opacity ===
+$opacity-main: 0.5;
+$opacity-primary: 0.25;
+$opacity-secondary: 0.2;
 
 // === shadow ===
-$shadow-drop-main: 3px 11px 20px rgba(212, 212, 212, 0.4);
-$shadow-drop-primary: 0px 0px 2px rgba(0, 0, 0, 0.1);
-$shadow-drop-secondary: 0px 0px 20px rgba(23, 23, 23, 0.25);
+$shadow-main: 0px 1px 2px rgba($color: #382824, $alpha: $opacity-primary);
+$shadow-primary: 0px 4px 4px rgba($color: #382824, $alpha: $opacity-primary);
+$shadow-secondary: 0px 4px 20px rgba($color: #382824, $alpha: $opacity-primary);
+$shadow-light: 0px 1px 1px rgba(56, 40, 36, 0.25);
+$shadow-tertiary: 0px 4px 10px rgba(56, 40, 36, 0.25);
+$shadow-drop-light: drop-shadow(0px 7px 64px rgba(56, 40, 36, 0.07));
+$shadow-drop-main: drop-shadow(0px 0px 12px rgba(56, 40, 36, 0.2));
 // === / shadow ===
 
+
+// === colors ===
+// === colors bg ===
+$color-bg-main: #ece6e6;
+$color-bg-primary-light: #fff;
+$color-bg-primary-dark: #000;
+$color-bg-secondary: #382824;
+$color-bg-tertiary: #b1a1a2;
+$color-bg-accent: #e8dede;
+
+// === colors text === 
+$color-text-main: #382824;
+$color-text-primary: #b1a1a2;
+$color-text-secondary: #1D1D1B;
+$color-text-dark: #000;
+$color-text-light: #fff;
+
+// === colors btn ===
+$color-button-main: #382824;
+$color-button-light: #fff;
+$color-button-hover: #6F5E5C;
+$color-button-pressed: #C2B0AF;
+$color-button-disabled: #CBCBCB;
+
+// === colors icon ===
+$color-icon-main: #382824;
+$color-icon-primary: #e47911;
+$color-icon-secondary: #cf1717;
+$color-icon-tertiary: #B1A1A2;
+$color-icon-dark: #000;
+$color-icon-light: #fff;
+
+// === colors menu icon ===
+$color-menu-icon-scissors: #000;
+$color-menu-icon-nail: #1D7C0D;
+$color-menu-icon-makeup: #F7931E;
+$color-menu-icon-brows: #6C92A7;
+$color-menu-icon-lashes: #0D257C;
+$color-menu-icon-permanent-makeup: #0D687C;
+$color-menu-icon-epilation: #0D7C61;
+$color-menu-icon-cosmetology: #920D64;
+$color-menu-icon-management: #F71E1E;
+
+// === colors icon bg ===
+$color-icon-bg-main: #382824;
+$color-icon-bg-dark: #000;
+$color-icon-bg-light: #fff;
+
+// === colors border ===
+$color-border-main: #382824;
+$color-border-primary: #ECE6E6;
+$color-border-dark: #000;
+$color-border-light: #fff;
+
+// === / colors ===
+
 // === breakpoints ===
-$bp-xxs-max: 480px;
-$bp-xs-max: 550px;
-$bp-sm: 1060px;
-$bp-sm-max: 1100px;
+$bp-xxs-max: 370px;
+$bp-xs-max: 599.98px;
+$bp-sm: 1080px;
+$bp-sm-max: 1079.98px;
 $bp-md: 1200px;
-$bp-md-max: 1250px;
+$bp-md-max: 1439.98px;
 $bp-lg: 1440px;
 // === /breakpoints ===
 

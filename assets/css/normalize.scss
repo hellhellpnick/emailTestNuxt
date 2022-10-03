@@ -233,12 +233,6 @@ select {
    * Correct the inability to style clickable types in iOS and Safari.
    */
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
 
 
 /**
@@ -285,7 +279,6 @@ fieldset {
 legend {
     box-sizing: border-box;
     /* 1 */
-    color: inherit;
     /* 2 */
     display: table;
     /* 1 */
@@ -367,8 +360,7 @@ textarea {
    * 2. Change font properties to `inherit` in Safari.
    */
 
- ::-webkit-file-upload-button {
-    -webkit-appearance: button;
+::-webkit-file-upload-button {
     /* 1 */
     font: inherit;
     /* 2 */

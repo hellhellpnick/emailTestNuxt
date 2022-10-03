@@ -4,3 +4,247 @@
 @import "./mixins.scss";
 @import "./common.scss";
 @import "./typography.scss";
+
+.base-select {
+  max-width: 335px;
+}
+
+.base-select__wrapper {
+  @include constructor-flex(flex-start, flex-start, column);
+  background-color: $color-bg-primary-light;
+  border-radius: $border-radius-soft;
+  position: absolute;
+  width: calc(100% + 2px);
+  top: calc(100% + 1px);
+  max-height: 500px;
+  overflow-y: scroll;
+  left: -1px;
+  filter: $shadow-drop-main;
+  z-index: 5;
+}
+
+.base-select__item {
+  @include font-secondary-regular;
+  @include font-size-xs;
+  @include transition;
+  width: 100%;
+  text-align: left;
+  padding: $base * 3 $base * 6;
+  color: $color-text-dark;
+
+  &:first-child {
+    border-radius: $border-radius-soft $border-radius-soft 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 $border-radius-soft $border-radius-soft;
+  }
+
+  &:only-child {
+    border-radius: $border-radius-soft;
+  }
+
+  @include media-desktop-hover {
+    font-weight: 700;
+    background-color: $color-bg-main;
+  }
+}
+
+.base-select__item.is-active {
+  font-weight: 700;
+  background-color: $color-bg-main;
+}
+
+.base-select__svg {
+  @include constructor-svg(16px, 7px, transparent);
+  @include transition;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.base-select__svg--rotate {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.base-select--master {
+  max-width: 450px;
+  margin-bottom: $base * 7;
+}
+
+.base-select__modal-lesson {
+  margin-bottom: $base * 4;
+  max-width: 450px;
+}
+
+.base-select__checkbox {
+  max-width: 450px;
+  margin-bottom: $base * 10;
+}
+
+.base-select__checkbox--active {
+  margin-bottom: $base * 2;
+}
+
+.base-select__checkbox-wrapper {
+  @include constructor-flex(center, center, column);
+  width: 100%;
+}
+
+.base-select__checkbox-block {
+  @include constructor-flex(flex-start, flex-start, column);
+  max-width: 450px;
+  width: 100%;
+  padding: 5px 12px $base * 7;
+  border-radius: $border-radius-soft;
+  box-shadow: $shadow-main;
+  margin-bottom: $base * 8;
+
+  @include media-desktop {
+    padding: 5px 26px $base * 7;
+  }
+}
+
+.base-select__nav {
+  @include constructor-flex(space-between, center, row);
+  width: 100%;
+  margin-bottom: $base * 5;
+}
+
+.base-select__nav-title {
+  @include font-secondary-bold;
+  @include font-size-sm;
+  color: $color-text-dark;
+}
+
+.base-select__nav-btn {
+  @include font-secondary-regular;
+  @include font-size-xs;
+  color: $color-text-dark
+}
+
+.base-select__checked {
+  @include constructor-flex(flex-start, center, row);
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+.base-select__checked-svg {
+  width: 16px;
+  height: 16px;
+  margin-right: $base * 3;
+
+  &>svg {
+    @include constructor-svg(16px, 16px, $color-icon-bg-light);
+
+  }
+}
+
+.base-select__checked-title {
+  @include font-secondary-regular;
+  @include font-size-xs;
+  color: $color-text-dark;
+}
+
+.base-input {
+  @include transition;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 25px 30px;
+  max-height: 50px;
+  border-radius: $border-radius-main;
+  border: 1px solid $color-border-main;
+  z-index: 1;
+}
+
+.base-input__input {
+  @include font-secondary-regular;
+  @include font-size-sm;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.base-input__helper {
+  display: none;
+  font-weight: $font-weight-main;
+  font-size: 12px;
+  line-height: 20px;
+  color: $color-text-secondary;
+  font-family: $font-family-primary;
+  text-transform: none;
+}
+
+.base-input__label {
+  @include font-secondary-regular;
+  @include font-size-sm;
+  @include transition;
+  white-space: nowrap;
+  top: 12px;
+  left: 30px;
+  position: absolute;
+  z-index: -1;
+}
+
+.base-input--focus {
+  &.base-input {
+    overflow: visible;
+  }
+
+  .base-input__label {
+    background-color: $color-bg-primary-light;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0 $base;
+    top: -$base * 2;
+    z-index: 1;
+  }
+}
+
+.base-input--error {
+  margin-bottom: $base*8;
+  filter: $shadow-drop-light;
+
+  .base-input__helper {
+    display: block;
+    position: absolute;
+    bottom: -$base * 6;
+    left: $base * 4;
+  }
+}
+
+.base-input__password {
+  @include constructor-svg(16px, 11px, $color-icon-tertiary);
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.base-input__password--visible {
+  display: block;
+}
+
+.base-input__modal-lesson {
+  max-width: 450px;
+  margin-bottom: $base * 4;
+}
+
+.base-select__checkbox-input {
+  margin-bottom: $base * 4;
+  max-width: 100%;
+}

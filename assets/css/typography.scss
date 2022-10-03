@@ -1,28 +1,16 @@
 h1,
-h2 {
-  @include font-primary-bold;
-  color: $color-text-primary-dark;
-  margin-bottom: $base * 4;
-}
-
+h2,
 h3,
 h4,
 h5,
 h6,
 p {
-  @include font-primary-regular;
-  color: $color-text-primary-dark;
-  margin-bottom: $base * 5;
-
-  @include media-desktop {
-    margin-bottom: $base * 6;
-  }
+  color: $color-text-main;
 }
 
 h1 {
   @include media-desktop {
     @include font-size-xxl;
-    margin-bottom: $base * 6;
   }
 
   @include media-desktop-max {
@@ -65,33 +53,13 @@ h5,
 h6 {
   @include media-desktop {
     @include font-size-sm;
-    margin-bottom: $base * 5;
   }
 
   @include media-desktop-max {
     @include font-size-xs;
-    margin-bottom: $base * 4;
   }
 }
 
 p {
-  @include media-desktop {
-    @include font-size-sm;
-  }
-
-  @include media-desktop-max {
-    @include font-size-xs;
-  }
-}
-
-ul,
-ol {
-  margin-bottom: $base * 4;
-}
-
-a {
-  @include font-primary-regular;
-  @include font-size-sm;
-  color: $color-text-primary-dark;
-  @include transition;
+  @include font-size-xs;
 }
